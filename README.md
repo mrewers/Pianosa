@@ -1,0 +1,2 @@
+# Pianosa
+Custom WordPress theme
