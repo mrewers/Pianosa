@@ -1,0 +1,23 @@
+{
+  "name": "mrewers/pianosa",
+  "description": "WordPress theme for technical blogs",
+  "type": "wordpress-theme",
+  "keywords": ["wordpress", "theme"],
+  "homepage": "https://github.com/mrewers/Pianosa",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Marek Rewers",
+      "homepage": "https://github.com/mrewers",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+      "issues": "https://github.com/mrewers/Pianosa/issues",
+      "wiki": "https://github.com/mrewers/Pianosa/wiki",
+      "source": "https://github.com/mrewers/Pianosa"
+  },
+  "require": {
+    "composer/installers": "^1.0"
+  }
+}
