@@ -1,0 +1,26 @@
+{
+  "name": "pianosa",
+  "version": "1.0.0",
+  "description": "WordPress theme for technical blogs",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrewers/Pianosa"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+  ],
+  "author": "Marek Rewers",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mrewers/Pianosa/issues",
+  },
+  "homepage": "https://github.com/mrewers/Pianosa",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

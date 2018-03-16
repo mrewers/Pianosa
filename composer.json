@@ -2,7 +2,10 @@
   "name": "mrewers/pianosa",
   "description": "WordPress theme for technical blogs",
   "type": "wordpress-theme",
-  "keywords": ["wordpress", "theme"],
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
   "homepage": "https://github.com/mrewers/Pianosa",
   "license": "GPL-2.0-or-later",
   "authors": [
