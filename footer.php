@@ -1,1 +1,6 @@
-wp_foot()
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+  </body>
+</html>

@@ -1,9 +1,7 @@
-<?php
-    get_header()
- ?>
+<?php get_header(); ?>
 
-<?php get_sidebar(); ?>
+<div class="wrap">
+  <h1>Pianosa Test</h1>
+</div>
 
-<?php
-    get_footer()
-  ?>
+<?php get_footer(); ?>
