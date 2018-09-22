@@ -9,18 +9,19 @@
   },
   "keywords": [
     "wordpress",
-    "theme",
+    "theme"
   ],
   "author": "Marek Rewers",
   "license": "GPL-2.0-or-later",
   "bugs": {
-    "url": "https://github.com/mrewers/Pianosa/issues",
+    "url": "https://github.com/mrewers/Pianosa/issues"
   },
   "homepage": "https://github.com/mrewers/Pianosa",
-  "dependencies": {
-
+  "scripts": {
+    "scss": "node-sass --output-style compressed style.scss > style.css"
   },
+  "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "4.9.3"
   }
 }
