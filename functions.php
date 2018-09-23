@@ -5,6 +5,7 @@ class PianosaSite {
   function __construct() {
     add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_pianosa' ) );
     add_action( 'after_setup_theme', array( $this, 'pianosa_setup' ) );
+    add_action( 'widgets_init', array( $this, 'pianosa_widget_setup' ) );
   }
   
   function enqueue_pianosa() {
@@ -20,7 +21,22 @@ class PianosaSite {
 
     register_nav_menu( 'primary_nav', 'Primary Header Navigation' );
     register_nav_menu( 'footer_nav', 'Footer Navigation' );
-  } 
+  }
+
+  function pianosa_widget_setup() {
+    register_sidebar(
+      array(
+        'name'          => 'Default Sidebar',
+        'id'            => 'sidebar-default',
+        'class'         => 'default-admin',
+        'description'   => 'Default theme sidebar',
+        'before_widget' => '<aside id="%1$s" class="sidebar %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="sidebar-title">',
+        'after_title'   => '</h3>',
+      )
+    );
+  }
 }
 
 new PianosaSite();
