@@ -11,10 +11,15 @@
 
   <?php 
   
-    if( is_home() ):
+    if( is_front_page() ):
+      $pianosa_class = array( 'pianosa_front_page' );
+    else:
+      $pianosa_class = array( 'pianosa_page' );
+    endif;
 
   ?>
 
-  <body <?php body_class(); ?>>
+  <body <?php body_class( $pianosa_class ); ?>>
 
-    <?php wp_nav_menu( array('theme_location'=>'primary_nav') ); ?>
+    <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+    <?php wp_nav_menu( array( 'theme_location'=>'primary_nav' ) ); ?>

@@ -4,7 +4,7 @@ class PianosaSite {
   
   function __construct() {
     add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_pianosa' ) );
-    add_action( 'init', array( $this, 'pianosa_setup' ) );
+    add_action( 'after_setup_theme', array( $this, 'pianosa_setup' ) );
   }
   
   function enqueue_pianosa() {
@@ -14,6 +14,9 @@ class PianosaSite {
 
   function pianosa_setup() {
     add_theme_support( 'menus' );
+    add_theme_support( 'custom-header' );
+    add_theme_support( 'post-thumbnails' );
+
     register_nav_menu( 'primary_nav', 'Primary Header Navigation' );
     register_nav_menu( 'footer_nav', 'Footer Navigation' );
   } 
