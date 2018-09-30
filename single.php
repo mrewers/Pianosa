@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="wrap">
+<div class="content-wrap">
 
   <?php if( have_posts() ):
 
