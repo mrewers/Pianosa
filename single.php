@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content-wrap">
+<div class="content-wrap post-wrap">
 
   <?php if( have_posts() ):
 
@@ -11,6 +11,8 @@
     endwhile;
 
   endif; ?>
+
+  <?php get_sidebar(); ?>
 
 </div> <!-- End wrap -->
 

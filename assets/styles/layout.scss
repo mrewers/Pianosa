@@ -1,14 +1,33 @@
+.main-content {
+  flex: 1 0 auto;
+}
+
 .content-wrap {
+  margin: 1em auto;
+  max-width: 1300px;
+}
+
+.footer-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-wrap,
+.post-wrap {
   display: grid;
   grid-gap: 1%;
   grid-template-columns: 74% 25%;
   grid-template-rows: auto;
-  margin: 0 auto;
-  max-width: 1300px;
 }
 
 @media screen and (max-width: 850px) {
-  .content-wrap {
+  .content-wrap-page {
     grid-template-columns: 100%;
   }
 }

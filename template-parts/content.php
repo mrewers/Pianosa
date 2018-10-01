@@ -11,7 +11,7 @@
 <article id="post-<?php the_ID(); ?>">
   <figure class="post-featured-image"><?php the_post_thumbnail(); ?></figure>
   <h2 class="post-title"><?php the_title(); ?></h2>
-  <small class="post-byline"><?php the_author(); ?> | <?php get_the_date(); ?></small>
+  <small class="post-byline"><?php the_author(); ?> | <?php echo get_the_date(); ?></small>
   <div class="post-content"><?php the_content(); ?></div>
   <small class="post-categories"><?php the_category(); ?></small>
 </article>

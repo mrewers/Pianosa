@@ -1,4 +1,36 @@
+.top-nav-container {
+  background-color: #64C2EC;
+  box-shadow: 5px 5px 5px #BDBDBE;
+  padding: 1em 0;
+}
+
 .menu-header-menu-container {
   margin: 0 auto;
   max-width: 1300px;
 }
+
+.menu-header-menu-container {
+
+  > ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#menu-header-menu {
+
+  > .menu-item {
+
+    margin-right: 1em;
+  
+    > a {
+      color: #1D1D1D;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+}
+
