@@ -23,8 +23,7 @@ class Settings_Page {
     if ( !current_user_can( 'manage_options' ) ) {
       wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
     }
-    echo '<div class="wrap">';
-    echo '<p>Settings Page</p>';
-    echo '</div>';
+
+    include( get_template_directory() . '/admin/partials/teaser-settings.php');
   }
 }

@@ -4,7 +4,7 @@
  * Autoload classes - any class that is in the admin directory with a [NAME]-class.php file format will be autoloaded'
  */
 
- require_once get_stylesheet_directory() . '/includes/autoloader.php';
+require_once get_stylesheet_directory() . '/includes/autoloader.php';
 
 Pianosa_Autoloader::register( get_stylesheet_directory() . '/admin/' );
 

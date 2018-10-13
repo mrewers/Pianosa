@@ -10,9 +10,9 @@
   
     endwhile;
 
-  endif; ?>
-
-  <?php get_sidebar(); ?>
+  endif; 
+  
+  get_sidebar(); ?>
 
 </div> <!-- End wrap -->
 
