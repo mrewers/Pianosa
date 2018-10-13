@@ -23,11 +23,11 @@
           'cat'            => $category->term_id,
         );
 
-        $categoryOne = new WP_Query( $args );
+        $teaser_post = new WP_Query( $args );
 
-        if( $categoryOne->have_posts() ):
+        if( $teaser_post->have_posts() ):
   
-          while( $categoryOne->have_posts() ): $categoryOne->the_post();
+          while( $teaser_post->have_posts() ): $teaser_post->the_post();
 
             get_template_part( 'template-parts/content', 'teaser' );
 
@@ -35,14 +35,38 @@
 
         endif;
 
-        wp_reset_postdata();
-      
-      ?> </div>
+        wp_reset_postdata(); ?>
+
+      </div> <!-- End teaser-item -->
 
       <?php endforeach ?>
       
     </div> <!-- End teaser-bar-content -->
-  </div> <!-- End teaser-bar -->    
+  </div> <!-- End teaser-bar -->
+
+  <div class="latest-post"> <?php
+
+    $args = array( 
+      'post_type'      => 'post',
+      'posts_per_page' => '1',
+    );
+
+    $latest_post = new WP_Query( $args );
+
+    if( $latest_post->have_posts() ):
+
+      while( $latest_post->have_posts() ): $latest_post->the_post();
+
+        get_template_part( 'template-parts/content', get_post_format() );
+
+      endwhile;
+
+    endif;
+
+    wp_reset_postdata(); ?>
+
+  </div> <!-- End latest-post -->
+
 </div> <!-- End content-wrap -->
 
 <?php get_footer(); ?>
