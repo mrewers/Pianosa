@@ -12,9 +12,13 @@
       <small class="page-categories"><?php the_category(); ?></small>
       <hr />
   
-    <?php endwhile;
+    <?php endwhile; ?>
 
-  endif; ?>
+    <div class="pagination-default">
+      <?php get_template_part( 'template-parts/content', 'pagination' ); ?>
+    </div>
+  
+  <?php endif; ?>
 
 </div> <!-- End wrap -->
 

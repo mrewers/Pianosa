@@ -8,9 +8,13 @@
 
       get_template_part( 'template-parts/content', 'search' );
   
-    endwhile;
+    endwhile; ?>
 
-  endif; ?>
+    <div class="pagination-search">
+      <?php get_template_part( 'template-parts/content', 'pagination' ); ?>
+    </div>
+
+  <?php endif; ?>
 
 </div> <!-- End wrap -->
 
