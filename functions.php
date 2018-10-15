@@ -39,6 +39,7 @@ class PianosaSite {
     add_theme_support( 'custom-header' );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'post-formats', array('aside', 'image', 'status', 'video') );
+    add_theme_support( 'html5', array( 'search-form' ) );
 
     register_nav_menu( 'primary_nav', 'Primary Header Navigation' );
     register_nav_menu( 'footer_nav', 'Footer Navigation' );

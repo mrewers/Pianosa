@@ -33,8 +33,16 @@
 
     <div class="top-nav-container">
 
-      <?php wp_nav_menu( array( 'theme_location'=>'primary_nav' ) ); ?>
+      <div class="top-nav-content">
+      
+        <?php wp_nav_menu( array( 'theme_location'=>'primary_nav' ) ); ?>
+        
+        <div class="top-nav-search">
+          <?php get_search_form() ?>
+        </div>
+      
+      </div> <!-- End top-nav-content -->
 
-    </div>
+    </div> <!-- End top-nav-container -->
 
     <div class="main-content">

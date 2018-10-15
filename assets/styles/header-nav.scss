@@ -4,7 +4,9 @@
   padding: 1em 0;
 }
 
-.menu-header-menu-container {
+.top-nav-content {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1300px;
 }
