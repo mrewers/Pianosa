@@ -1,0 +1,33 @@
+.post-category,
+.result-category,
+.teaser-category {
+
+  display: flex;
+
+  > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+  
+    > li > a {
+      background-color: #23282d;
+      color: #BDBDBE;
+      margin-right: 10px;
+      padding: 2px 7px;
+      text-decoration: none;
+    }
+
+    &.post-tags > li > a {
+      background-color: #64C2EC;
+      color: #23282d;
+    }
+  }
+}
+
+.teaser-category {
+
+  > ul {
+    padding-left: 5px;
+  }
+}

@@ -1,21 +1,3 @@
 .post-featured-image {
   margin: 1em 0;
 }
-
-.post-category {
-
-  > ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-  
-    > li > a {
-      background-color: #23282d;
-      color: #BDBDBE;
-      margin-right: 5px;
-      padding: 2px 5px;
-      text-decoration: none;
-    }
-  }
-}
