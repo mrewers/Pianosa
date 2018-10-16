@@ -9,15 +9,16 @@ h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
 }
 
-p > a:hover {
-  background-color: #FABC09;
-}
+p > a {
+  
+  text-decoration: none;
+  color: #057dcd;
+  
+  &:hover {
+    background-color: rgba(250, 188, 9, 0.4);
+  }
 
-code {
-  background-color: #BDBDBE;
-}
-
-code.terminal {
-  background-color: #38383d;
-  color: #e1e1e1
+  &:visited {
+    color: #057dcd;
+  }
 }

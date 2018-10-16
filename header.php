@@ -25,7 +25,9 @@
     <header>
 
       <div class="content-wrap header-wrap">
-        <h1 class="site-title-header"><?php bloginfo( 'name' ); ?></h1>
+        <a class="site-title-link" href="<?php echo get_home_url() ?>">
+          <h1 class="site-title-header"><?php bloginfo( 'name' ); ?></h1>
+        </a>
         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
       </div>
 

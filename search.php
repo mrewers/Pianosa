@@ -2,19 +2,23 @@
 
 <div class="content-wrap">
 
-  <?php if( have_posts() ):
+  <div class="search-result-list">
 
-    while( have_posts() ): the_post();
+    <?php if( have_posts() ):
 
-      get_template_part( 'template-parts/content', 'search' );
-  
-    endwhile; ?>
+      while( have_posts() ): the_post();
 
-    <div class="pagination-search">
-      <?php get_template_part( 'template-parts/content', 'pagination' ); ?>
-    </div>
+        get_template_part( 'template-parts/content', 'search' );
+    
+      endwhile; ?>
 
-  <?php endif; ?>
+      <div class="pagination-search">
+        <?php get_template_part( 'template-parts/content', 'pagination' ); ?>
+      </div>
+
+    <?php endif; ?>
+
+  </div> <!-- End search-results-list -->
 
 </div> <!-- End wrap -->
 

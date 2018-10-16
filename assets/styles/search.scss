@@ -1,4 +1,38 @@
+.search {
+  
+  &-form {
+    position: relative;
+  }
+
+  &-input {
+    border: solid 1px #BDBDBE;
+    border-right: none;
+    padding: 5px;
+    width: 100%;
+  }
+
+  &-submit {
+    background-color: #BDBDBE;
+    background-image: url('assets/icons/search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: solid 1px #BDBDBE;
+    border-left: none;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    z-index: 2;
+  }
+}
+
 .search-result {
+
+  &-list {
+    padding-top: 2em;
+  }
 
   &-item {
     display: flex;

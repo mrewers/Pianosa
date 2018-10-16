@@ -1,14 +1,17 @@
-.top-nav-container {
-  background-color: #64C2EC;
-  box-shadow: 5px 5px 5px #BDBDBE;
-  padding: 1em 0;
-}
+.top-nav {
+  &-container {
+    background-color: #64C2EC;
+    box-shadow: 5px 5px 5px #BDBDBE;
+    padding: 1em 0;
+  }
 
-.top-nav-content {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1300px;
+  &-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
 }
 
 .menu-header-menu-container {
