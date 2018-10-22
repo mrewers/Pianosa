@@ -37,7 +37,10 @@
 
       <div class="top-nav-content">
       
-        <?php wp_nav_menu( array( 'theme_location'=>'primary_nav' ) ); ?>
+        <?php wp_nav_menu( array(
+            'theme_location' => 'primary_nav',
+            'walker' => new Walker_Nav_Primary
+          ) ); ?>
         
         <div class="top-nav-search">
           <?php get_search_form() ?>

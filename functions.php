@@ -6,9 +6,10 @@
 
 require_once get_stylesheet_directory() . '/includes/autoloader.php';
 
-Pianosa_Autoloader::register( get_stylesheet_directory() . '/admin/' );
+Pianosa_Autoloader::register( get_stylesheet_directory() . '/includes/' );
 
 use Pianosa\Settings_Page as Settings_Page;
+use Walker_Nav_Primary as Walker;
 
 class PianosaSite {
   
