@@ -8,8 +8,12 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>">
-  <figure class="post-featured-image"><?php the_post_thumbnail(); ?></figure>
+<article class="post-article" id="post-<?php the_ID(); ?>">
+  <div class="post-hero">
+    <div class="angle">
+      <figure class="post-featured-image"><?php the_post_thumbnail(); ?></figure>
+    </div>
+  </div>
   <div class="post-body">
     <h2 class="post-title"><?php the_title(); ?></h2>
     <small class="post-byline"><?php the_author(); ?> | <?php echo get_the_date(); ?></small>

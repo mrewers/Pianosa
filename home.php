@@ -44,7 +44,7 @@
     </div> <!-- End teaser-bar-content -->
   </div> <!-- End teaser-bar -->
 
-  <div class="latest-post"> <?php
+  <div class="latest-post post-wrap"> <?php
 
     $args = array( 
       'post_type'      => 'post',
@@ -62,6 +62,8 @@
       endwhile;
 
     endif;
+
+    get_sidebar();
 
     wp_reset_postdata(); ?>
 

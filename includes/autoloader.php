@@ -3,13 +3,15 @@
  * Class loader using SPL autoloader.
  */
 class Pianosa_Autoloader {
-	/**
+  
+  /**
 	 * Path to look for classes
 	 *
 	 * @var string
 	 */
 	private static $base_path;
-	/**
+  
+  /**
 	 * Registers Autoloader as an SPL autoloader.
 	 */
 	public static function register( $base_path ) {
@@ -17,7 +19,8 @@ class Pianosa_Autoloader {
 		spl_autoload_register( array(__CLASS__, 'autoload') );
 	
 	}
-	 /**
+  
+  /**
    * Recursively autoload classes in directory
    *
    * @param  string $class
@@ -26,7 +29,7 @@ class Pianosa_Autoloader {
    */
   public static function autoload( $class, $dir = null ) {
 	
-    if ( is_null( $dir ) ) {
+    if ( $dir === null ) {
 			 $dir = self::$base_path;
 		}
     

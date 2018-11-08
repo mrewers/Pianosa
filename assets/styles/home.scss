@@ -70,3 +70,12 @@
     width: auto;
   }
 }
+
+.latest-post {
+
+  background-color: #F8F8F8;
+  
+  > article > .post-hero {
+    margin: 0;
+  }
+}

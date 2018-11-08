@@ -26,7 +26,7 @@ class PianosaSite {
   // Enqueues theme's styles and scripts
   function enqueue_pianosa() {
     wp_enqueue_style( 'pianosa_style', get_template_directory_uri() . '/style.css', array(), '0.0.1', 'all');
-    wp_enqueue_script( 'pianosa_scripts', get_template_directory_uri() . '/assets/js/bundle.min.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'pianosa_scripts', get_template_directory_uri() . '/assets/js/pianosa.js', array(), '1.0.0', true );
   }
 
   // Add theme settings page to appearance menu

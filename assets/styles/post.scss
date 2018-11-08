@@ -1,17 +1,52 @@
 .post {
+
+  &-article {
+    display: block;
+  }
+
+  &-hero {
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+  }
   
   &-featured-image {
     box-shadow: 5px 5px 5px #BDBDBE;
-    margin: 1em 0 0;
+    margin: 0;
   }
 
   &-body {
     background-color: #FFFFFF;
     box-shadow: 5px 5px 5px #BDBDBE;
-    padding: 2em 1em 1em; 
+    padding: 2em 1em 1em;
+    position: relative;
+    z-index: 100;
   }
 
   &-title {
     margin-top: 0
   }
+}
+
+.angle {
+
+  clip-path: none;
+  position: relative;
+
+  &::after {
+    background-color: #FFFFFF;
+    bottom: -100px;
+    content: '';
+    height: 10em;
+    left: 0;
+    position: absolute;
+    transform: skewY(-5deg);
+    width: 100%;
+    z-index: 100;
+  }
+}
+
+.hide {
+  opacity: 0;
+  z-index: -1;
 }
