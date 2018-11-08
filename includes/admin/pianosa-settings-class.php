@@ -21,7 +21,7 @@ class Settings_Page {
 
   function populate_submenu() {
     if ( !current_user_can( 'manage_options' ) ) {
-      wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+      wp_die( esc_html_e( 'You do not have sufficient permissions to access this page.', 'pianosa' ) );
     }
 
     include( get_template_directory() . '/admin/partials/teaser-settings.php');

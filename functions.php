@@ -68,10 +68,17 @@ class PianosaSite {
     $squadron = '<a href="https://github.com/mrewers/Squadron-256" target="_blank">Squadron 256</a>';
     $wordpress = '<a href="http://www.wordpress.org" target="_blank">WordPress</a>';
     
+    $allowed_html = [
+      'a' => [
+        'href' => [],
+        'target' => [],
+      ]
+    ];
+
     if ( is_plugin_active( 'squadron-256/squadron-256.php' ) ) {
-      echo 'Powered by ' . $pianosa . ' and ' . $squadron . ' | Built on ' . $wordpress . '</p>';
+      echo 'Powered by ' . wp_kses( $pianosa, $allowed_html ) . ' and ' .  wp_kses( $squadron, $allowed_html ) . ' | Built on ' .  wp_kses( $wordpress, $allowed_html ) . '</p>';
     } else {
-      echo 'Powered by ' . $pianosa . ' | Built on ' . $wordpress . '</p>';
+      echo 'Powered by ' .  wp_kses( $pianosa, $allowed_html ) . ' | Built on ' . wp_kses( $wordpress, $allowed_html ) . '</p>';
     }
   }
     

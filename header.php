@@ -25,10 +25,10 @@
     <header>
 
       <div class="content-wrap header-wrap">
-        <a class="site-title-link" href="<?php echo get_home_url() ?>">
+        <a class="site-title-link" href="<?php esc_html_e( get_home_url() ) ?>">
           <h1 class="site-title-header"><?php bloginfo( 'name' ); ?></h1>
         </a>
-        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+        <img src="<?php header_image(); ?>" height="<?php esc_html_e( get_custom_header()->height ) ?>" width="<?php esc_html_e( get_custom_header()->width ) ?>" alt="" />
       </div>
 
     </header>
